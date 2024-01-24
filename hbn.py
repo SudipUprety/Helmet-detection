@@ -23,7 +23,7 @@ with open("helmet.names", "r") as f:
 layer_names_helmet = net_helmet.getLayerNames()
 output_layers_helmet = [layer_names_helmet[i - 1] for i in net_helmet.getUnconnectedOutLayers()]
 
-cap = cv2.VideoCapture('video.mp4')
+cap = cv2.VideoCapture('video.MOV')
 
 # Create a directory to save license plate images
 if not os.path.exists('license_plate_images'):
