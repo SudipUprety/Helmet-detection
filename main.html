@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6fd8a997cb.js" crossorigin="anonymous"></script>
+    <title>HelmGuard the no helmet and number detection app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="logo"><img src="" alt="">
+                HelmGuard
+            </a>
+            <a href="#" class="profile"><i class="fa-solid fa-user" style="color: #ffffff;"></i>Robert</a>
+        </nav>
+    </header>\
+    <!-- navbar -->
+    <section class="main">
+        <!-- sidebar -->
+        <aside class="side-bar">
+            <div class="upper">
+                <h5>
+                    MAIN MENU
+                </h5>
+                <ul>
+                    <a href="#"><li><img src="images/home.png" alt=""> Home</i></li></a>
+                    <a href="#"><li><img src="images/log.png" alt="">Voilation Log</li></a>
+                </ul> 
+                
+            </div>
+            <div class="lower">
+                <ul>
+                    <a href="#"><li><img src="images/logout.png" alt="">Log out</li></a>
+                </ul>
+            </div>
+            
+        </aside>
+        <!-- sidebar -->
+        <!-- main-container -->
+
+        <div class="main-container">
+            <div class="video-container">
+                <video class="video" src="images/video.mp4" autoplay controls muted></video>
+            </div>
+            <div class="number-container">
+                <div class="heading">
+                    <h5>Number plates recognized</h5>
+                    <p>Select the vehicle you wish to log by clicking on its number plate below</p>
+                </div>
+                <div class="number-img">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                </div>
+                <div class="number-img">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                    <img class="images" src="/images/number.png" alt="">
+                </div>
+                 
+                
+            </div>
+        </div>
+    </section>
+        <!-- main-container -->
+        <!-- overlay -->
+    <div class="onclick-overlay">
+        <!-- form fill -->
+        <div class="number-fill">
+            <i class="fa-solid fa-xmark close-btn" style="color: #ffffff; font-size: 25px; margin-left:425px ;"></i>
+
+                <h4>ENTER THE VEHICLE HERE !</h4>
+            <form action="" class="form-container">
+                <div class="drop1">
+                    <label for="zonal-code">Choose Zonal Code</label>
+                    <select style="margin-left: 25px;">
+                        <option value="">BA</option>
+                        <option value="">LU</option>
+                        <option value="">KA</option>
+                        <option value="">MA</option>
+                    </select>
+                </div>
+                <div class="drop1">
+                    <label for="lot-no">Enter Lot Number</label>
+                    <input style="margin-left: 39px;" type="text" class="lot-no">
+                </div>
+                <div class="drop1">
+                    <label for="zonal-code">Choose Vehicle Type</label>
+                    <select style="margin-left: 15px;">
+                        <option value="">BA</option>
+                        <option value="">LU</option>
+                        <option value="">KA</option>
+                        <option value="">MA</option>
+                    </select>
+                </div>
+                <div class="drop1">
+                    <label for="lot-no">Enter Vehicle Id </label>
+                    <input type="text"style="margin-left: 55px;" class="lot-no">
+                </div>
+                
+            </form>
+            <!-- form fill -->
+            <button class="btn" id="done-btn">Done</button>
+        </div>
+        <!-- success popup box -->
+        <div class="successful">
+            <i class="fa-solid fa-xmark close-btn" style="color: #ffffff; font-size: 25px; margin-left:425px ;"></i>
+            <h5>VEHICLE ADDED SUCCESSFULLY !</h5>
+            <div class="buttons">
+                <button class="btn" id="add-btn">Add Another</button>
+                <button class="btn2 close-btn" >CANCEL</button>
+                
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+</body>
+<script src="/scripts.js"></script>
+
+</html>
