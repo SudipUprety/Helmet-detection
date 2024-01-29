@@ -26,8 +26,8 @@
                     MAIN MENU
                 </h5>
                 <ul>
-                    <a href="#"><li><img src="images/home.png" alt=""> Home</i></li></a>
-                    <a href="#"><li><img src="images/log.png" alt="">Voilation Log</li></a>
+                    <li class="home active"><img src="images/home.png" alt=""> Home</i></li>
+                    <li class="voilation"><img src="images/log.png" alt="">Voilation Log</li>
                 </ul> 
                 
             </div>
@@ -67,6 +67,48 @@
                  
                 
             </div>
+        </div>
+        <div class="voilation-container">
+            <div class="date">
+                <h5>CHOOSE A DATE</h5>
+                <input type="date" id="date-picker" name="voilation-date">           
+            </div>
+            <div class="line"></div>
+            <div class="list">
+                <table>
+                    <!-- table heading -->
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Number Plate</th>
+                            <th>Date recorded </th>
+                            <th>Status</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr class="list-row">
+                            <td><img class="list-img"src="/images/number.png" alt="" srcset=""></td>
+                            <td>BA-73-PA 4997</td>
+                            <td class="date-data">12/21/2080</td>
+                            <td class="status-data"><button class="status-btn paid">Paid</button></td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                        <tr class="list-row">
+                            <td><img class="list-img"src="/images/number.png" alt="" srcset=""></td>
+                            <td>BA-73-PA 4997</td>
+                            <td class="date-data">12/21/2080</td>
+                            <td class="status-data"><button class="status-btn unpaid">Unpaid</button></td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                    </tbody>
+                   
+                    <!-- table heading -->
+                    
+                </table>
+            </div> 
+            
         </div>
     </section>
         <!-- main-container -->
