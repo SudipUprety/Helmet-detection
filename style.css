@@ -224,8 +224,15 @@ nav{
     font-weight: 500;
 }
 .number-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     cursor: pointer;
+}
+
+.images{
+    margin: 2px;
 }
 
 /*? main container */
@@ -337,6 +344,7 @@ tbody{
     background-color: #0A369D;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .line{
@@ -348,9 +356,11 @@ tbody{
 }
 
 
+
 /*? alert */
 
 .onclick-overlay{
+    margin-top: 10px;
     display: none;
     position: relative;
     top: 50%;
@@ -479,3 +489,81 @@ tbody{
 }
 
 /* ? alert */
+
+
+/* ? vehicleOwner */
+
+.send-mail-container{
+    
+    margin-left: 40px;
+    width: 818px;
+    height: 570px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(192, 209, 255,0.4) ;
+    height: 100%;
+    border-radius: 8px;
+}
+.Text{
+    color: #6C6C6C;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.line{
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    
+
+}
+.Top{
+    margin-bottom: 50px;
+}
+
+.subtext{
+    
+    margin-left: 50px;
+
+}
+
+.row1{
+    font-weight: 600;
+    color: #6C6C6C;
+    margin-right: 60px;
+    font-size: 20px;
+   
+}
+
+.row2{
+    color: #6C6C6C;
+    opacity: 0.95;
+    font-size: 20px;
+    
+}
+.r12{
+    margin-bottom: 20px;
+}
+
+.submit-btn1{
+    background-color: #0A369D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    width: 15%;
+    height: 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    margin-left: 80%;
+    margin-bottom: 11%;
+
+}
+
+.send-mail-container{
+    display: none;
+}

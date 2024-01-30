@@ -56,8 +56,6 @@
                     <img class="images" src="/images/number.png" alt="">
                     <img class="images" src="/images/number.png" alt="">
                     <img class="images" src="/images/number.png" alt="">
-                </div>
-                <div class="number-img">
                     <img class="images" src="/images/number.png" alt="">
                     <img class="images" src="/images/number.png" alt="">
                     <img class="images" src="/images/number.png" alt="">
@@ -110,6 +108,56 @@
             </div> 
             
         </div>
+        <div class="send-mail-container" style="height: 570px;">
+            <div class=""></div>
+            <div class ="Text">
+                 <span class="Top"> VEHICLE OWNERSHIP DETAILS</span>
+                 <hr class="line">
+          
+            </div>
+            <div class="subtext">
+                <div class="r12">
+                <Span class="row1">Name</Span>
+                <span class ="row2" style="padding-left: 90px;">Ramesh Shrestha</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Vehicle number</Span>
+                <span class ="row2" style="padding-left: 5px;">BA-73-PA-4997</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Email address</Span>
+                <span class ="row2" style="padding-left: 22px;">rameshshres12@gmail.com</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Rule violated</Span>
+                <span class ="row2" style="padding-left: 29px;">Not wearing helmet while riding</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Fine amount</Span>
+                <span class ="row2" style="padding-left: 32px;">Rs. 1500</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Date fined</Span>
+                <span class ="row2" style="padding-left: 50px;">12/21/2080</span>
+                <br>
+            </div>
+                
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="submit-btn1" onclick="">SEND EMAIL</button>
+            </div>
+        </div>
     </section>
         <!-- main-container -->
         <!-- overlay -->
@@ -122,29 +170,29 @@
             <form action="" class="form-container">
                 <div class="drop1">
                     <label for="zonal-code">Choose Zonal Code</label>
-                    <select style="margin-left: 25px;">
-                        <option value="">BA</option>
-                        <option value="">LU</option>
-                        <option value="">KA</option>
-                        <option value="">MA</option>
+                    <select id="zonalCodeSelect"style="margin-left: 25px;">
+                        <option value="BA">BA</option>
+                        <option value="LU">LU</option>
+                        <option value="KA">KA</option>
+                        <option value="MA">MA</option>
                     </select>
                 </div>
                 <div class="drop1">
                     <label for="lot-no">Enter Lot Number</label>
-                    <input style="margin-left: 39px;" type="text" class="lot-no">
+                    <input id="lotNumberInput" style="margin-left: 39px;" type="text" class="lot-no">
                 </div>
                 <div class="drop1">
                     <label for="zonal-code">Choose Vehicle Type</label>
-                    <select style="margin-left: 15px;">
-                        <option value="">BA</option>
-                        <option value="">LU</option>
-                        <option value="">KA</option>
-                        <option value="">MA</option>
+                    <select id ="vehicleTypeSelect" style="margin-left: 15px;">
+                        <option value="BA">BA</option>
+                        <option value="LU">LU</option>
+                        <option value="KA">KA</option>
+                        <option value="MA">MA</option>
                     </select>
                 </div>
                 <div class="drop1">
                     <label for="lot-no">Enter Vehicle Id </label>
-                    <input type="text"style="margin-left: 55px;" class="lot-no">
+                    <input id ="vehicleIdInput" type="text"style="margin-left: 55px;" class="lot-no">
                 </div>
                 
             </form>
