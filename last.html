@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6fd8a997cb.js" crossorigin="anonymous"></script>
+    <title>HelmGuard the no helmet and number detection app</title>
+    <link rel="stylesheet" href="stylelast.css">
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="nav-bar">
+            <a href="#" class="logo"><img src="" alt="">
+                HelmGuard
+            </a>
+            <a href="#" class="profile"><i class="fa-solid fa-user" style="color: #ffffff;"></i>Robert</a>
+        </nav>
+    </header>\
+    <!-- navbar -->
+    <section class="main">
+        <!-- sidebar -->
+        <aside class="side-bar">
+            <div class="upper">
+                <h5>
+                    MAIN MENU
+                </h5>
+                <ul>
+                    <a href="#"><li><img src="images/home.png" alt=""> Home</i></li></a>
+                    <a href="#"><li><img src="images/log.png" alt="">Voilation Log</li></a>
+                </ul> 
+                
+            </div>
+            <div class="lower">
+                <ul>
+                    <a href="#"><li><img src="images/logout.png" alt="">Log out</li></a>
+                </ul>
+            </div>
+            
+        </aside>
+        <!-- sidebar -->
+        <!-- main-container -->
+
+        <div class="main-container">
+            <div class ="Text">
+                 <span class="Top"> VEHICLE OWNERSHIP DETAILS</span>
+                 <hr class="line">
+          
+            </div>
+            <div class="subtext">
+                <div class="r12">
+                <Span class="row1">Name</Span>
+                <span class ="row2" style="padding-left: 108px;">Ramesh Shrestha</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Vehicle number</Span>
+                <span class ="row2">BA-73-PA-4997</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Email address</Span>
+                <span class ="row2" style="padding-left: 22px;">rameshshres12@gmail.com</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Rule violated</Span>
+                <span class ="row2" style="padding-left: 29px;">Not wearing helmet while riding</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Fine amount</Span>
+                <span class ="row2" style="padding-left: 32px;">Rs. 1500</span>
+                <br>
+            </div>
+
+            <div class="r12">
+                <Span class="row1">Date fined</Span>
+                <span class ="row2" style="padding-left: 50px;">12/21/2080</span>
+                <br>
+            </div>
+                
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="submit-btn" onclick="">SEND EMAIL</button>
+            </div>
+        </div>
+    </section>
+        <!-- main-container -->
+        <!-- overlay -->
+    <div class="onclick-overlay">
+        <!-- form fill -->
+        <div class="number-fill">
+            <i class="fa-solid fa-xmark close-btn" style="color: #ffffff; font-size: 25px; margin-left:425px ;"></i>
+
+                <h4>ENTER THE VEHICLE HERE !</h4>
+            <form action="" class="form-container">
+                <div class="drop1">
+                    <label for="zonal-code">Choose Zonal Code</label>
+                    <select style="margin-left: 25px;">
+                        <option value="">BA</option>
+                        <option value="">LU</option>
+                        <option value="">KA</option>
+                        <option value="">MA</option>
+                    </select>
+                </div>
+                <div class="drop1">
+                    <label for="lot-no">Enter Lot Number</label>
+                    <input style="margin-left: 39px;" type="text" class="lot-no">
+                </div>
+                <div class="drop1">
+                    <label for="zonal-code">Choose Vehicle Type</label>
+                    <select style="margin-left: 15px;">
+                        <option value="">BA</option>
+                        <option value="">LU</option>
+                        <option value="">KA</option>
+                        <option value="">MA</option>
+                    </select>
+                </div>
+                <div class="drop1">
+                    <label for="lot-no">Enter Vehicle Id </label>
+                    <input type="text"style="margin-left: 55px;" class="lot-no">
+                </div>
+                
+            </form>
+            <!-- form fill -->
+            <button class="btn" id="done-btn">Done</button>
+        </div>
+        <!-- success popup box -->
+        <div class="successful">
+            <i class="fa-solid fa-xmark close-btn" style="color: #ffffff; font-size: 25px; margin-left:425px ;"></i>
+            <h5>VEHICLE ADDED SUCCESSFULLY !</h5>
+            <div class="buttons">
+                <button class="btn" id="add-btn">Add Another</button>
+                <button class="btn2 close-btn" >CANCEL</button>
+                
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+</body>
+<script src="/scripts.js"></script>
+
+</html>
